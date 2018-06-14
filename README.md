@@ -6,7 +6,7 @@
 
 #### Usage:
 - Import `index.css` to use the animation
-- Create a `Holder <div></div>`
+- Create a Holder `<div></div>`
 - Put 3 `<div></div>` inside
 - Assign class `hamburger-top` to create the Hamburger Icon
 - Add class `hamburger-top rotator` to animate it once. Remove class to revert position
