@@ -4,57 +4,98 @@
 ![Animation](./ScreenShots/Image.gif)
 
 
-#### Usage:
-- Import `index.css` to use the animation
+#### Usage Plain CSS:
+- Add `index.css` to use the animation
 - Create a Holder `<div></div>`
 - Put 3 `<div></div>` inside
 - Assign class `hamburger-top` to create the Hamburger Icon
-- Add class `hamburger-top rotator` to animate it once. Remove class to revert position
-- Add class `hamburger-top loading` to animate it infinitely. Remove class to revert position
+- Add class `hamburger-top active` to animate it once. Remove the class to revert position
+- Add class `hamburger-top loading` to animate it infinitely. Remove the class to revert position
+
+#### Usage React:
+- import `Hamburger` component into your file
+- Add prop `active` to make the hamburger active
+- Add prop `loading` to make hamburger a loader
+
+> Check `App.js` for usage example
 
 
-#### Examples:
+#### Examples Plain CSS:
+##### Display `Hamburger Icon`
+```html
+  <div style="position: relative">
+    <div class="hamburger-top"></div>
+    <div class="hamburger-center"></div>
+    <div class="hamburger-bottom"></div>
+  </div>
+```
+
+##### Active `Hamburger Icon`
+```html
+  <div style="position: relative">
+    <div class="hamburger-top active"></div>
+    <div class="hamburger-center active"></div>
+    <div class="hamburger-bottom active"></div>
+  </div>
+```
+
+##### Infinite Loading `Hamburger Icon`
+```html
+  <div style="position: relative">
+    <div class="hamburger-top loading"></div>
+    <div class="hamburger-center loading"></div>
+    <div class="hamburger-bottom loading"></div>
+  </div>
+```
+
+#### Examples React:
 ##### Display `Hamburger Icon`
 ```js
-  <div style={{ position: "relative" }}>
-    <div
-      className={`hamburger-top`}
-    />
-    <div
-      className={`hamburger-center`}
-    />
-    <div
-      className={`hamburger-bottom`}
-    />
-  </div>
+  import Hamburger from './src/components/Hamburger';
+  ...
+  class ... extends Component {
+    ...
+    render() {
+      ...
+      return (
+        ...
+        <Hamburger />
+        ...
+      )
+    }
+  }
 ```
 
-##### Rotate `Hamburger Icon` Once
+##### Active `Hamburger Icon`
 ```js
-  <div style={{ position: "relative" }}>
-    <div
-      className={`hamburger-top rotator`}
-    />
-    <div
-      className={`hamburger-center rotator`}
-    />
-    <div
-      className={`hamburger-bottom rotator`}
-    />
-  </div>
+  import Hamburger from './src/components/Hamburger';
+  ...
+  class ... extends Component {
+    ...
+    render() {
+      ...
+      return (
+        ...
+        <Hamburger active />
+        ...
+      )
+    }
+  }
 ```
 
-##### Infinitely Rotate `Hamburger Icon`
+##### Infinite Loading `Hamburger Icon`
 ```js
-  <div style={{ position: "relative" }}>
-    <div
-      className={`hamburger-top loading`}
-    />
-    <div
-      className={`hamburger-center loading`}
-    />
-    <div
-      className={`hamburger-bottom loading`}
-    />
-  </div>
+  import Hamburger from './src/components/Hamburger';
+  ...
+  class ... extends Component {
+    ...
+    render() {
+      ...
+      return (
+        ...
+        <Hamburger loading />
+        ...
+      )
+    }
+  }
 ```
