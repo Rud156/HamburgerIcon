@@ -5,7 +5,7 @@
 
 
 #### Usage Plain CSS:
-- Add `index.css` to use the animation
+- Add `./components/Hamburger/style.css` to use the animation
 - Create a container `<div></div>`
 - Put 3 `<div></div>`'s inside
 - Assign class `hamburger-top`, `hamburger-center` and `hamburger-bottom` to the inner `div`'s
