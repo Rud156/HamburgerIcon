@@ -6,8 +6,8 @@
 
 #### Usage Plain CSS:
 - Add `index.css` to use the animation
-- Create a Holder `<div></div>`
-- Put 3 `<div></div>` inside
+- Create a container `<div></div>`
+- Put 3 `<div></div>`'s inside
 - Assign class `hamburger-top`, `hamburger-center` and `hamburger-bottom` to the inner `div`'s
 - Add style `position: relative` to the container `div` create the Hamburger Icon
 - Add class `active` to animate it once. Remove the class to revert position
