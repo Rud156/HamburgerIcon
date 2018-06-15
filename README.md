@@ -8,9 +8,10 @@
 - Add `index.css` to use the animation
 - Create a Holder `<div></div>`
 - Put 3 `<div></div>` inside
-- Assign class `hamburger-top` to create the Hamburger Icon
-- Add class `hamburger-top active` to animate it once. Remove the class to revert position
-- Add class `hamburger-top loading` to animate it infinitely. Remove the class to revert position
+- Assign class `hamburger-top`, `hamburger-center` and `hamburger-bottom` to the inner `div`'s
+- Add style `position: relative` to the container `div` create the Hamburger Icon
+- Add class `active` to animate it once. Remove the class to revert position
+- Add class `loading` to animate it infinitely. Remove the class to revert position
 
 #### Usage React:
 - import `Hamburger` component into your file
