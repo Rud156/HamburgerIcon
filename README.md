@@ -1,10 +1,13 @@
-### Hamburger Animation
+## Hamburger Animation
 
-#### Animation:
+### Demo:
+#### https://codepen.io/Rud156/full/oyppGv/
+
+### Animation:
 ![Animation](./ScreenShots/Image.gif)
 
 
-#### Usage Plain CSS:
+### Usage Plain CSS:
 - Add `./components/Hamburger/style.css` to use the animation
 - Create a container `<div></div>`
 - Put 3 `<div></div>`'s inside
@@ -13,7 +16,7 @@
 - Add class `active` to animate it once. Remove the class to revert position
 - Add class `loading` to animate it infinitely. Remove the class to revert position
 
-#### Usage React:
+### Usage React:
 - import `Hamburger` component into your file
 - Add prop `active` to make the hamburger active
 - Add prop `loading` to make hamburger a loader
@@ -21,8 +24,8 @@
 > Check `App.js` for usage example
 
 
-#### Examples Plain CSS:
-##### Display `Hamburger Icon`
+### Examples Plain CSS:
+#### Display `Hamburger Icon`
 ```html
   <div style="position: relative">
     <div class="hamburger-top"></div>
@@ -31,7 +34,7 @@
   </div>
 ```
 
-##### Active `Hamburger Icon`
+#### Active `Hamburger Icon`
 ```html
   <div style="position: relative">
     <div class="hamburger-top active"></div>
@@ -40,7 +43,7 @@
   </div>
 ```
 
-##### Infinite Loading `Hamburger Icon`
+#### Infinite Loading `Hamburger Icon`
 ```html
   <div style="position: relative">
     <div class="hamburger-top loading"></div>
@@ -49,8 +52,8 @@
   </div>
 ```
 
-#### Examples React:
-##### Display `Hamburger Icon`
+### Examples React:
+#### Display `Hamburger Icon`
 ```js
   import Hamburger from './src/components/Hamburger';
   ...
@@ -67,7 +70,7 @@
   }
 ```
 
-##### Active `Hamburger Icon`
+#### Active `Hamburger Icon`
 ```js
   import Hamburger from './src/components/Hamburger';
   ...
@@ -84,7 +87,7 @@
   }
 ```
 
-##### Infinite Loading `Hamburger Icon`
+#### Infinite Loading `Hamburger Icon`
 ```js
   import Hamburger from './src/components/Hamburger';
   ...
